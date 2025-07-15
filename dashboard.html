@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Leads Extractor - Developed By Esayas Desta</title>
+    <link href="lib/tabulator/css/semantic-ui/tabulator_semantic-ui.min.css" rel="stylesheet" />
+    <link href="css/dashboard.css" rel="stylesheet" />
+    <script type="text/javascript" src="lib/tabulator/js/tabulator.min.js"></script>
+    <script type="text/javascript" src="lib/xlsx.full.min.js"></script>
+    <script src="lib/fetch.umd.js"></script>
+    <script src="lib/jquery-3.1.1.min.js"></script>
+    <script src="js/util.js"></script>
+</head>
+
+<body>
+    <div id="maincontent">
+        <div id="content">
+            <header style="display: flex; align-items: center; justify-content: space-between; padding: 10px 0;">
+                <h1 style="margin: 0; font-size: 2rem; color: #2d3e50;">Leads Extractor</h1>
+                <span style="font-size: 1rem; color: #888;">Developed By Esayas Desta</span>
+            </header>
+            <div style="display: flex; flex-direction: row; gap: 20px; margin-bottom: 10px;">
+                <div style="display: flex; gap: 20px;">
+                    <button id="download-csv">Download CSV</button>
+                    <button id="download-xlsx">Download XLSX</button>
+                </div>
+                <div><span id="accountinfo" style="font-weight: bold; font-size: 16px;"></span></div>
+            </div>
+            <div><span id="datastatus" style="color: red;"></span></div>
+            <div id="example-table"></div>
+        </div>
+    </div>
+    <footer style="margin-top: 30px; text-align: center; color: #aaa; font-size: 1rem;">
+        &copy; 2024 Developed By Esayas Desta
+    </footer>
+</body>
+<script src="js/dashboard.js"></script>
+
+</html>
